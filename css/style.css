@@ -1,14 +1,18 @@
 * {
   background: rgb(219, 219, 219);
+  box-sizing: border-box;
 }
 body {
   margin: 30px 50px 30px 50px;
   align-self: center;
   flex: inherit;
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 section {
-  display: block;
+  display: flex;
 }
 h1 {
   font-size: 50px;
@@ -52,4 +56,11 @@ input[type="button"]:active {
   border-radius: 1px;
   margin-right: 4px;
   width: 50%;
+}
+input[name="lastName"] {
+  margin-left: 3px;
+}
+footer {
+  display: flex;
+  align-items: center;
 }
