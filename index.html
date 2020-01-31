@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US"></html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Form Object 1</title>
+    <h1>Form Object</h1>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/upperLowerCASE.js"></script>
+  </head>
+
+  <body>
+    <section>
+      <form name="form1">
+        <b>First name: </b>
+        <input class="textInput" type="text" name="firstName" size="20" />
+        <br />
+        <b>Last name: </b>
+        <input class="textInput" type="text" name="lastName" size="20" />
+        <p>
+          <input
+            type="button"
+            name="upperButton"
+            value="Names to uppercase"
+            onclick="setCase('upper')"
+          />
+          <input
+            type="button"
+            name="lowerButton"
+            value="Names to lowercase"
+            onclick="setCase('lower')"
+          />
+        </p>
+      </form>
+    </section>
+  </body>
+  <footer>Copyright 2020</footer>
+</html>
