@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   background: rgb(219, 219, 219);
   box-sizing: border-box;
 }
@@ -8,8 +10,22 @@ body {
   flex: inherit;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /**justify-content: space-between;**/
   align-items: center;
+  min-height: 100vh;
+}
+.container {
+  /** adding auto margins to right and left**/
+  /**max-width: 1200px; **/
+  max-width: 350px;
+  max-height: 400px;
+  margin: 0px auto;
+  padding: 0px 30;
+}
+.full-height-grow {
+  /** responsible for items spacing**/
+  display: flex;
+  flex-direction: column;
 }
 section {
   display: flex;

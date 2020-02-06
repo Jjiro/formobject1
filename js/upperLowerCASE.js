@@ -1,4 +1,3 @@
-
 function setCase(caseSelection) {
   if (caseSelection == "upper") {
     document.form1.firstName.value = document.form1.firstName.value.toUpperCase();
